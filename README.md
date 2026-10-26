@@ -65,8 +65,8 @@ about **missing resources** (fonts the document references but does not embed).
 
 ## Install
 
-On Ubuntu 24.04 or later, or Debian 13 or later, download the `.deb` package
-from the [latest release](https://github.com/vxel/rafp/releases/latest), then:
+Download the `.deb` package from the
+[latest release](https://github.com/vxel/rafp/releases/latest), then:
 
 ```bash
 sudo apt install ./rafp_*_amd64.deb
@@ -74,6 +74,20 @@ sudo apt install ./rafp_*_amd64.deb
 
 It adds rafp to the applications menu and opens `.afp` files from the file
 manager.
+
+### Supported distributions
+
+The package is built for 64-bit x86 (amd64) and needs GTK 4.12+, libadwaita
+1.5+ and glibc 2.39+:
+
+| Distribution | Versions |
+|---|---|
+| Ubuntu | 24.04 LTS and later |
+| Debian | 13 (trixie) and later |
+| Based on Ubuntu 24.04 or later | e.g. Linux Mint 22, Pop!_OS 24.04, elementary OS 8 |
+
+Debian 12 and Ubuntu 22.04 ship an older GTK 4 and are not supported. On
+other distributions, build from source (see below).
 
 ## Build and run
 
