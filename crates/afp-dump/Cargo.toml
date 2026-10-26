@@ -1,0 +1,11 @@
+[package]
+name = "afp-dump"
+description = "Command-line dump of AFP structured fields and pages"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+afp-core = { workspace = true, features = ["pdf"] }
+serde_json = "1"

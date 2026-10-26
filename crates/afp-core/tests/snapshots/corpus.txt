@@ -1,0 +1,56 @@
+# Regression snapshots of the public test files (see tests/snapshots.rs).
+# Regenerate after an intended change: RAFP_UPDATE_SNAPSHOTS=1 cargo test -p afp-core --test snapshots
+alpheus-corpus/external/afplib_ende.afp pages=1 fields=64 plain:model=bbd9c46e3ae6b582 plain:svg=4a89cf5ace329baf embed:model=bbd9c46e3ae6b582 embed:svg=4a89cf5ace329baf
+alpheus-corpus/external/afplib_start.afp pages=1 fields=64 plain:model=353a051a04b90ea9 plain:svg=0b038ffd051f4db7 embed:model=353a051a04b90ea9 embed:svg=0b038ffd051f4db7
+alpheus-corpus/external/openafp_goca.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/external/openafp_ioca.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/external/openafp_sample.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/external/random_test.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/external/renderer_fontoutl.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/external/renderer_minimal.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/external/renderer_vseoutln.afp plain:error=67f85f13efdd1b26 embed:error=67f85f13efdd1b26
+alpheus-corpus/large_ibm273.afp pages=109 fields=446 plain:model=42162e7fddf4c74d plain:svg=5b987c9a501ac5a0 embed:model=42162e7fddf4c74d embed:svg=5b987c9a501ac5a0
+alpheus-corpus/minimal.afp pages=0 fields=2 plain:model=096a7b8df27e9740 plain:svg=cbf29ce484222325 embed:model=096a7b8df27e9740 embed:svg=cbf29ce484222325
+alpheus-corpus/modca-reference-10/Chapter_1.afp pages=0 fields=2 plain:model=096a7b8df27e9740 plain:svg=cbf29ce484222325 embed:model=096a7b8df27e9740 embed:svg=cbf29ce484222325
+alpheus-corpus/perf_ptx.afp pages=1 fields=65538 plain:model=cfde4f8c9641657c plain:svg=8633b3a750d65d60 embed:model=cfde4f8c9641657c embed:svg=8633b3a750d65d60
+bcoca_sample.afp pages=1 fields=12 plain:model=3fe292dec8a1c1ba plain:svg=33bb647424d7a4b9 embed:model=3fe292dec8a1c1ba embed:svg=33bb647424d7a4b9
+cff_document_sample.afp pages=1 fields=23 plain:model=3c634981981d8c98 plain:svg=c0692d8aa8fc0027 embed:model=3c634981981d8c98 embed:svg=c0692d8aa8fc0027
+coded_font_sample.afp pages=1 fields=28 plain:model=4a437555b837d21f plain:svg=506b4b3a4a5f0ffe embed:model=5606a19017581f47 embed:svg=cfc8aba2fcef87a4
+foca_cff_sample.afp pages=1 fields=9 plain:model=87dacbf9125cfd76 plain:svg=fd3f4b81c71dfdf7 embed:model=87dacbf9125cfd76 embed:svg=fd3f4b81c71dfdf7
+foca_sample.afp pages=2 fields=20 plain:model=42150ee657a20556 plain:svg=89279bc0fe95c919 embed:model=42150ee657a20556 embed:svg=89279bc0fe95c919
+fop-pairs/fonts.afp pages=1 fields=14 plain:model=c50c4d39b502f960 plain:svg=acff2d254cf8ad70 embed:model=c50c4d39b502f960 embed:svg=acff2d254cf8ad70
+fop-pairs/images.afp pages=5 fields=219 plain:model=5b0cb5033908a8e8 plain:svg=1475c71959ccbccf embed:model=5b0cb5033908a8e8 embed:svg=1475c71959ccbccf
+fop-pairs/list.afp pages=12 fields=158 plain:model=152e5926032372b3 plain:svg=2156bd1562853340 embed:model=152e5926032372b3 embed:svg=2156bd1562853340
+fop-pairs/normal.afp pages=1 fields=14 plain:model=84ba7b01f71e0573 plain:svg=f0291279a71c5273 embed:model=84ba7b01f71e0573 embed:svg=f0291279a71c5273
+fop-pairs/readme.afp pages=9 fields=94 plain:model=2289182cc42b8053 plain:svg=6bbb3dea84d7c4b0 embed:model=2289182cc42b8053 embed:svg=6bbb3dea84d7c4b0
+fop-pairs/simple.afp pages=1 fields=14 plain:model=4d525621370a4a4b plain:svg=eb51358b7273743a embed:model=4d525621370a4a4b embed:svg=eb51358b7273743a
+fop-pairs/table.afp pages=7 fields=74 plain:model=ad974f4ea938a004 plain:svg=3a0c6a9c10af042c embed:model=ad974f4ea938a004 embed:svg=3a0c6a9c10af042c
+fop-pairs/textdeko.afp pages=1 fields=14 plain:model=7236c546460c31ac plain:svg=7f0f8e819065d9a2 embed:model=7236c546460c31ac embed:svg=7f0f8e819065d9a2
+github-samples/afplib/C0X00006.afp pages=1 fields=23 plain:model=0b25ccd9b856592a plain:svg=a0db297282a22272 embed:model=0b25ccd9b856592a embed:svg=a0db297282a22272
+github-samples/afplib/IPDSpan.afp pages=1 fields=11 plain:model=ce5af2ec2ff52120 plain:svg=a4560dfc994336c8 embed:model=ce5af2ec2ff52120 embed:svg=a4560dfc994336c8
+github-samples/afplib/asciiAndEbcdicComment.afp pages=0 fields=10 plain:model=b11a05aaef154d5e plain:svg=cbf29ce484222325 embed:model=b11a05aaef154d5e embed:svg=cbf29ce484222325
+github-samples/afplib/asciiComment.afp pages=0 fields=2 plain:model=622966e0b950f0b7 plain:svg=cbf29ce484222325 embed:model=622966e0b950f0b7 embed:svg=cbf29ce484222325
+github-samples/afplib/bim.afp pages=1 fields=21 plain:model=cdaf9cf87a687cf7 plain:svg=096cac1a2167ca63 embed:model=cdaf9cf87a687cf7 embed:svg=096cac1a2167ca63
+github-samples/afplib/cs.afp pages=1 fields=14 plain:model=b1e11c0c532e25f5 plain:svg=2cce4c036a791ed0 embed:model=b1e11c0c532e25f5 embed:svg=2cce4c036a791ed0
+github-samples/afplib/fnirg10.afp pages=1 fields=14 plain:model=85ac951a0aee4710 plain:svg=589eaf0721b16487 embed:model=85ac951a0aee4710 embed:svg=589eaf0721b16487
+github-samples/afplib/hello.afp pages=0 fields=2 plain:model=5c91ca3324f2a9e9 plain:svg=cbf29ce484222325 embed:model=5c91ca3324f2a9e9 embed:svg=cbf29ce484222325
+github-samples/afplib/repeatingGroupVariableLength.afp pages=0 fields=12 plain:model=2e491fb07140ca3b plain:svg=cbf29ce484222325 embed:model=2e491fb07140ca3b embed:svg=cbf29ce484222325
+github-samples/afplib/unknownSF.afp pages=0 fields=1 plain:model=bd5c68daace69f4c plain:svg=cbf29ce484222325 embed:model=bd5c68daace69f4c embed:svg=cbf29ce484222325
+github-samples/fop/expected_named_resource.afp pages=1 fields=13 plain:model=1e715c5787fdd4a2 plain:svg=fe7ffb3606eed91e embed:model=1e715c5787fdd4a2 embed:svg=fe7ffb3606eed91e
+github-samples/fop/expected_resource.afp pages=1 fields=14 plain:model=601740d3609d920d plain:svg=fe7ffb3606eed91e embed:model=601740d3609d920d embed:svg=fe7ffb3606eed91e
+github-samples/fop/resource_any_name.afp pages=1 fields=14 plain:model=6af4edd7c1398275 plain:svg=960f8a5448f5d9d9 embed:model=6af4edd7c1398275 embed:svg=960f8a5448f5d9d9
+github-samples/fop/resource_name_match.afp pages=1 fields=14 plain:model=0e10d249e3ab6595 plain:svg=960f8a5448f5d9d9 embed:model=0e10d249e3ab6595 embed:svg=960f8a5448f5d9d9
+github-samples/fop/resource_name_mismatch.afp pages=1 fields=14 plain:model=80180094b44c2cea plain:svg=960f8a5448f5d9d9 embed:model=80180094b44c2cea embed:svg=960f8a5448f5d9d9
+github-samples/fop/resource_no_end_name.afp pages=1 fields=14 plain:model=6486ad7ee4aa0f44 plain:svg=0703703764244806 embed:model=6486ad7ee4aa0f44 embed:svg=0703703764244806
+goca_arc_sample.afp pages=1 fields=52 plain:model=04c88165623c0cc3 plain:svg=7c6952e6db15ee06 embed:model=04c88165623c0cc3 embed:svg=7c6952e6db15ee06
+goca_sample.afp pages=1 fields=31 plain:model=0ed98588a48ad349 plain:svg=33e1813e525b68d8 embed:model=0ed98588a48ad349 embed:svg=33e1813e525b68d8
+headline_sample/headline.afp pages=1 fields=11 plain:model=c6bbc45aadc958e9 plain:svg=dce101fcac590f27 embed:model=c6bbc45aadc958e9 embed:svg=dce101fcac590f27
+overlay_sample.afp pages=1 fields=21 plain:model=e29a52e814c48dc9 plain:svg=98c3db2bb5d7fd76 embed:model=e29a52e814c48dc9 embed:svg=98c3db2bb5d7fd76
+pagelimit_520.afp pages=520 fields=1562 plain:model=c320b36050939e6a plain:svg=6ac7668d78594c78 embed:model=c320b36050939e6a embed:svg=6ac7668d78594c78
+sample1_health/01_Health_Coverage.afp pages=1 fields=25 plain:model=e3c236e64ab8c339 plain:svg=b4ad436007c3c07b embed:model=e3c236e64ab8c339 embed:svg=b4ad436007c3c07b
+samples:bcoca_qr.afp pages=1 fields=12 plain:model=3fe292dec8a1c1ba plain:svg=33bb647424d7a4b9 embed:model=3fe292dec8a1c1ba embed:svg=33bb647424d7a4b9
+samples:foca_font.afp pages=2 fields=20 plain:model=42150ee657a20556 plain:svg=89279bc0fe95c919 embed:model=42150ee657a20556 embed:svg=89279bc0fe95c919
+samples:goca_demo.afp pages=1 fields=31 plain:model=0ed98588a48ad349 plain:svg=33e1813e525b68d8 embed:model=0ed98588a48ad349 embed:svg=33e1813e525b68d8
+samples:health_coverage.afp pages=1 fields=25 plain:model=e3c236e64ab8c339 plain:svg=b4ad436007c3c07b embed:model=e3c236e64ab8c339 embed:svg=b4ad436007c3c07b
+samples:ioca_image.afp pages=1 fields=21 plain:model=cdaf9cf87a687cf7 plain:svg=096cac1a2167ca63 embed:model=cdaf9cf87a687cf7 embed:svg=096cac1a2167ca63
+samples:overlay_demo.afp pages=1 fields=21 plain:model=e29a52e814c48dc9 plain:svg=98c3db2bb5d7fd76 embed:model=e29a52e814c48dc9 embed:svg=98c3db2bb5d7fd76

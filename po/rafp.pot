@@ -1,0 +1,589 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the rafp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: rafp 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 17:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: crates/afp-viewer/src/app.rs:72 crates/afp-viewer/src/app.rs:96
+msgid "Open AFP File…"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:84
+msgid "Default Encoding"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:85
+msgid "Small Text in Embedded Font"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:89
+msgid "About rafp"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:103
+msgid "Open an AFP File"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:105
+msgid ""
+"Inspect its structured fields and render its pages. You can also drop a file "
+"on this window."
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:121
+msgid "Main Menu"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:126
+msgid "Toggle the Inspector (F9)"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:158
+msgid "Drop the AFP file to open it"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:475
+#, rust-format
+msgid "Cannot read {file}: {error}"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:503
+msgid "AFP files"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:508
+msgid "All files"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:513
+msgid "Open AFP File"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:523
+#, rust-format
+msgid "The file chooser could not be shown: {error}"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:540
+msgid "Loading…"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:617
+msgid "Cannot open this file"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:623
+#, rust-format
+msgid ""
+"This file is an AFP resource ({kind}), not a printable document: it has no "
+"pages (no BDT…EDT document structure for a viewer to lay out), which is why "
+"most AFP viewers can't open it at all. Its structured fields are listed "
+"below; it carries no drawable content to render."
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:630
+#, rust-format
+msgid ""
+"This file is an AFP resource ({kind}), not a printable document: it has no "
+"pages (no BDT…EDT document structure for a viewer to lay out), which is why "
+"most AFP viewers can't open it at all. A synthesized view of its contents is "
+"shown on the right."
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:636
+msgid "AFP Resource"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:641
+#, rust-format
+msgid ""
+"This document references {n} external font resource that is not embedded in "
+"the file. Like other AFP viewers, rafp can't load it, so text using it is "
+"drawn with a substitute font:"
+msgid_plural ""
+"This document references {n} external font resources that are not embedded "
+"in the file. Like other AFP viewers, rafp can't load them, so text using "
+"them is drawn with a substitute font:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/app.rs:653
+#, rust-format
+msgid "{name} (text decoded via {codec})"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:659
+msgid "Missing Resources"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:670
+msgid ""
+"AFP / MO:DCA file inspector and renderer, a Rust port of readAFP.\n"
+"\n"
+"Decodes PTOCA text, IOCA images (JPEG, MMR, LZW, CMYK bands), IM images, "
+"BCOCA QR codes, GOCA vector graphics and FOCA raster, Type 1 and CFF fonts."
+msgstr ""
+
+#. Translators: your name(s), one per line, shown in the About dialog.
+#: crates/afp-viewer/src/app.rs:675
+msgid "translator-credits"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:679
+msgid "readAFP on GitHub"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:680
+msgid "Based on readAFP"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:728
+msgid "cp500 (international, default)"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:729
+msgid "cp037 (US / Canada)"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:730
+msgid "cp273 (Germany / Austria)"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:731
+msgid "cp1047 (Latin-1 open systems)"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:732
+msgid "cp1141 (Germany, euro)"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:740
+msgid "font character set"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:741
+msgid "character set"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:742
+msgid "coded font"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:743
+msgid "code page"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:744
+msgid "page overlay"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:745
+msgid "page segment"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:746
+msgid "IOCA image"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:747
+msgid "GOCA graphics"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:748
+msgid "BCOCA bar code"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:749
+msgid "object container"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:750
+msgid "resource group"
+msgstr ""
+
+#: crates/afp-viewer/src/app.rs:751
+msgid "object resource"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:30
+msgid "PTX Text"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:31
+msgid "NOP Text"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:32
+msgid "TLE Tags"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:33
+msgid "Field Type"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:163
+msgid "Find…"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:166
+msgid "What to search"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:167
+msgid "Match Case"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:168
+msgid "Previous Match"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:169
+msgid "Next Match"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:197
+msgid "Click a type to filter the table (several at once)."
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:202
+msgid "Clear Filter"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:308
+msgid "Offset"
+msgstr ""
+
+#. Translators: column of structured-field identifiers (hexadecimal codes).
+#: crates/afp-viewer/src/inspector.rs:310
+msgid "ID"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:311
+msgid "Structured Field"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:312
+msgid "Name"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:313
+msgid "Size"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:314
+msgid "Field Data"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:387
+#, rust-format
+msgid "{n} data byte"
+msgid_plural "{n} data bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/inspector.rs:397
+#, rust-format
+msgid ""
+"{data}\n"
+"\n"
+"hex: {hex}"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:624
+#, rust-format
+msgid "Field Counts ({n} type)"
+msgid_plural "Field Counts ({n} types)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/inspector.rs:733
+#, rust-format
+msgid "{current} / {total}"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:736
+msgid "No matches"
+msgstr ""
+
+#: crates/afp-viewer/src/inspector.rs:823
+#, rust-format
+msgid "{n} triplet"
+msgid_plural "{n} triplets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/page_view.rs:79
+msgid "Zoom In"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:80
+msgid "Zoom Out"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:95
+msgid "Document as PDF…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:96
+msgid "All Text as .txt…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:99
+msgid "Page as PDF…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:100
+msgid "Page as SVG…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:101
+msgid "Page as PNG (300 dpi)…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:111
+msgid "First Page"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:112
+msgid "Previous Page (Page Up)"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:113
+msgid "Next Page (Page Down)"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:114
+msgid "Last Page"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:117
+msgid "Page Number"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:134
+msgid "Copy Text"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:135
+msgid "Copy this page's text"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:139
+msgid "Export"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:141
+msgid "Export the document or this page"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:146
+msgid "Zoom (Ctrl + wheel)"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:167
+#: crates/afp-viewer/src/page_view.rs:641
+msgid "Fidelity Notes"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:172
+msgid "All Notes"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:172
+msgid "Fonts Only"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:173
+msgid "Which fidelity notes to highlight"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:402
+msgid "Why this may differ"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:506
+msgid "Rendering…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:514
+#, rust-format
+msgid "Page {n} of {total}"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:517
+#, rust-format
+msgid "of {n}"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:576
+msgid "This page cannot be drawn."
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:639
+#, rust-format
+msgid "Fidelity Notes ({n})"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:644
+msgid "Nothing on this page is approximated: it is rendered faithfully."
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:647
+#, rust-format
+msgid ""
+"{n} approximated region highlighted; hover it to see why. Click to hide."
+msgid_plural ""
+"{n} approximated regions highlighted; hover one to see why. Click to hide."
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/page_view.rs:654
+#, rust-format
+msgid ""
+"{n} approximated region on this page: click to highlight it and see why on "
+"hover."
+msgid_plural ""
+"{n} approximated regions on this page: click to highlight them and see why "
+"on hover."
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/page_view.rs:695
+#, rust-format
+msgid "X {x} mm   Y {y} mm"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:760
+msgid "Page text copied"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:785
+msgid "Text"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:800
+msgid "PNG image"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:800
+msgid "SVG image"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:818
+msgid "PDF document"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:822
+#, rust-format
+msgid "Exporting {n} pages as PDF…"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:838
+#, rust-format
+msgid "Saved {file}"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:840
+#, rust-format
+msgid "Could not save: {error}"
+msgstr ""
+
+#: crates/afp-viewer/src/page_view.rs:841
+msgid "Could not save: the export failed"
+msgstr ""
+
+#: crates/afp-viewer/src/settings.rs:21
+msgid "Fit Width"
+msgstr ""
+
+#: crates/afp-viewer/src/settings.rs:22
+msgid "Fit Height"
+msgstr ""
+
+#. Translators: a zoom level; French writes "150 %" with a no-break space.
+#: crates/afp-viewer/src/settings.rs:24
+#, rust-format
+msgid "{n}%"
+msgstr ""
+
+#: crates/afp-viewer/src/worker.rs:41
+#, rust-format
+msgid "{n} page"
+msgid_plural "{n} pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/worker.rs:42
+#, rust-format
+msgid "{n} structured field"
+msgid_plural "{n} structured fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/worker.rs:43
+#, rust-format
+msgid "{n} byte"
+msgid_plural "{n} bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: crates/afp-viewer/src/worker.rs:46
+#, rust-format
+msgid "code page from MCF: {pages}"
+msgstr ""
+
+#: crates/afp-viewer/src/worker.rs:68
+msgid "The decoder crashed on this file."
+msgstr ""
+
+#: crates/afp-viewer/src/worker.rs:105
+#, rust-format
+msgid "Not a valid AFP file: {error}"
+msgstr ""
+
+#. Translators: digit group separator in large numbers (French: a narrow no-break space).
+#: crates/afp-viewer/src/i18n.rs:90
+msgctxt "thousands separator"
+msgid ","
+msgstr ""
+
+#. Translators: decimal separator (French: a comma).
+#: crates/afp-viewer/src/i18n.rs:111
+msgctxt "decimal separator"
+msgid "."
+msgstr ""
+
+#: data/org.delaunois.Rafp.desktop.in:3
+msgid "rafp"
+msgstr ""
+
+#: data/org.delaunois.Rafp.desktop.in:4
+msgid "AFP Viewer"
+msgstr ""
+
+#: data/org.delaunois.Rafp.desktop.in:5
+msgid "Inspect and render AFP (MO:DCA) print files"
+msgstr ""
+
+#. Translators: search terms, separated by semicolons; keep the English ones too.
+#: data/org.delaunois.Rafp.desktop.in:7
+msgid "AFP;MO:DCA;IBM;print;viewer;"
+msgstr ""
+
+#: data/org.delaunois.Rafp.mime.xml.in:5
+msgid "AFP document"
+msgstr ""

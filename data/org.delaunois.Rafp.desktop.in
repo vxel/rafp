@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=rafp
+GenericName=AFP Viewer
+Comment=Inspect and render AFP (MO:DCA) print files
+# Translators: search terms, separated by semicolons; keep the English ones too.
+Keywords=AFP;MO:DCA;IBM;print;viewer;
+Exec=@EXEC@ %f
+Icon=org.delaunois.Rafp
+Terminal=false
+Categories=Office;Viewer;
+MimeType=application/vnd.ibm.modcap;
+StartupWMClass=org.delaunois.Rafp

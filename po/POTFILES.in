@@ -1,0 +1,9 @@
+# Files with translatable strings.
+data/org.delaunois.Rafp.desktop.in
+data/org.delaunois.Rafp.mime.xml.in
+crates/afp-viewer/src/app.rs
+crates/afp-viewer/src/inspector.rs
+crates/afp-viewer/src/page_view.rs
+crates/afp-viewer/src/settings.rs
+crates/afp-viewer/src/worker.rs
+crates/afp-viewer/src/i18n.rs

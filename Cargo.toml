@@ -1,0 +1,15 @@
+[workspace]
+resolver = "3"
+members = ["crates/afp-core", "crates/afp-viewer", "crates/afp-dump"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+license = "MIT"
+
+[workspace.dependencies]
+afp-core = { path = "crates/afp-core" }
+
+[profile.dev.package."*"]
+opt-level = 2

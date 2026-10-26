@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AFP files, so the desktop offers rafp to open them. -->
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/vnd.ibm.modcap">
+    <comment>AFP document</comment>
+    <acronym>AFP</acronym>
+    <expanded-acronym>Advanced Function Presentation</expanded-acronym>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.afp"/>
+    <glob pattern="*.afpds"/>
+    <glob pattern="*.list3820"/>
+    <!-- A structured field: 0x5A, a 2-byte length, then an ID starting 0xD3. -->
+    <magic priority="40">
+      <match type="byte" offset="0" value="0x5a">
+        <match type="byte" offset="3" value="0xd3"/>
+      </match>
+    </magic>
+  </mime-type>
+</mime-info>
