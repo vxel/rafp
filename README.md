@@ -63,6 +63,18 @@ about **missing resources** (fonts the document references but does not embed).
 | FOCA         | Raster fonts; Adobe Type 1 and CFF / CID-keyed outline fonts; specimen pages for font resources; document text drawn in the file's own embedded fonts           |
 | Code pages   | EBCDIC cp037, cp273, cp424, cp500, cp875, cp1026, cp1047, cp1140, cp1141; DOS/Windows single-byte pages; UTF-8, UTF-16BE, Latin-1, Shift-JIS, GBK, EUC-KR, Big5 |
 
+## Install
+
+On Ubuntu 24.04 or later, or Debian 13 or later, download the `.deb` package
+from the [latest release](https://github.com/vxel/rafp/releases/latest), then:
+
+```bash
+sudo apt install ./rafp_*_amd64.deb
+```
+
+It adds rafp to the applications menu and opens `.afp` files from the file
+manager.
+
 ## Build and run
 
 You need Rust 1.92 or later, and the GTK 4 (4.12+) and libadwaita (1.5+)
@@ -83,6 +95,16 @@ and a `.desktop` file named after the application id, `org.delaunois.Rafp`):
 ```bash
 tools/install-desktop-linux.sh
 ```
+
+To build the Debian package (into `target/debian/`), with
+[cargo-deb](https://github.com/kornelski/cargo-deb) and `dpkg-dev` installed:
+
+```bash
+tools/build-deb.sh
+```
+
+Pushing a tag such as `v0.1.0` (matching the version in `Cargo.toml`) builds
+the package on GitHub and attaches it to a release.
 
 ### Command-line dump
 
@@ -142,7 +164,7 @@ crates/
   afp-dump/     command-line dump
 po/             translations (gettext)
 data/           desktop entry and file type templates, icons, screenshots
-tools/          code page table generator, translation update, Linux installer
+tools/          code page table generator, translation update, installer, Debian package
 ```
 
 ## License

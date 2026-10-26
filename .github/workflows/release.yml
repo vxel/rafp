@@ -1,0 +1,60 @@
+# Build the Debian package and attach it to a GitHub release.
+# Push a tag matching the workspace version (e.g. v0.1.0) to publish;
+# run it by hand to get the package as a workflow artifact only.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deb:
+    # The oldest supported target: the package then installs on Ubuntu 24.04+
+    # and Debian 13+ (GTK 4.12+, libadwaita 1.5+, glibc 2.39+).
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the tag matches the version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match version $version in Cargo.toml" >&2
+            exit 1
+          fi
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libgtk-4-dev libadwaita-1-dev gettext dpkg-dev
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-deb
+
+      - name: Test
+        run: cargo test --workspace --locked --features afp-core/pdf
+
+      - name: Build the package
+        run: tools/build-deb.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rafp-deb
+          path: target/debian/*.deb
+
+      - name: Publish the release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: target/debian/*.deb
+          generate_release_notes: true
